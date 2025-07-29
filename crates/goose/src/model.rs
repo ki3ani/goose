@@ -34,6 +34,9 @@ static MODEL_SPECIFIC_LIMITS: Lazy<HashMap<&'static str, usize>> = Lazy::new(|| 
     map.insert("gemma2-9b", 8_192);
     map.insert("kimi-k2", 131_072);
     map.insert("qwen3-32b", 131_072);
+    map.insert("grok-3", 131_072);
+    map.insert("grok-4", 256_000); // 256K
+    map.insert("qwen3-coder", 262_144); // 262K
 
     map
 });
